@@ -34,31 +34,32 @@ const Invoice = () => {
             <RootLayout className="space-y-12 relative w-full pb-16 border pt-10" >
                 <div className="w-full flex items-center justify-center">
                     {/* {invoice card} */}
-                    <div    
+                    <div
                         ref={invoiceRef}
                         className="w-[90%] grid grid-cols-5 bg-white rounded-3xl 
                         border border-neutral-200 shadow-sm relative"
                     >
 
                         {/* left side (for passenger ) */}
-                        <PassengerInvoice/>
+                        <PassengerInvoice />
 
                         {/* right for company */}
-                        <CompanyInvoice/>
+                        <CompanyInvoice />
 
                         {/* /* cut circle  */}
-                                                <div className="absolute -top-3 right-40 h-6 w-6 
-                                                    rounded-full bg-white-50 border border-neutral-500"/>
-                                                    
-                                                <div className="absolute -top-3 right-5 h-6 w-6 
-                                                    rounded-full bg-neutral-50 border"/>
+                        <div className="absolute -top-3 right-[19%] h-6 w-6 rounded-full bg-white border-white " />
 
-                                            </div>
-                                        </div>
-                                            {/* download invoice card button */}
-                    <div className="w-full flex justify-center items-center">
-                        Download Button
+                        <div className="absolute -bottom-3 right-[19%] h-6 w-6 
+                                                    rounded-full bg-white border border-white"/>
+
                     </div>
+                </div>
+                {/* download invoice card button */}
+                <div className="w-full flex justify-center items-center">
+                    <button onClick={handleDownload} className="w-fit px-8 h-14 bg-red-500 text-neutral-500 font-bold text-lg rounded-lg text-white">
+                        Download Invoice
+                    </button>
+                </div>
             </RootLayout>
         </div>
     )

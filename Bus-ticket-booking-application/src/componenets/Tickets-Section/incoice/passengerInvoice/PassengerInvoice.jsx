@@ -1,7 +1,7 @@
 import { FaCircleCheck, FaPhone } from 'react-icons/fa6'
 import BusImg from '../../../../../src/assets/bus.png'
 import qrCodeImg from '../../../../../src/assets/qrcode.jpg'
-import { IoCloseCircle } from 'react-icons/io5'
+// import { IoCloseCircle } from 'react-icons/io5'
 
 
 const PassengerInvoice = () => {
