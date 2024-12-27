@@ -12,6 +12,7 @@ const CheckOut = () => {
                 title={"Ticket Chek Out "}
             />
 
+            <h1>Checkout page</h1>
             <RootLayout className="space-y-12 relative w-full pb-16 border" >
                 <div className="w-full grid grid-cols-5 items-start gap-44 relative">
                     {/* passenger Details */}
