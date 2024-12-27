@@ -4,7 +4,7 @@ import BusSeatsPhoto from '../../../../src/assets/bus-seats-photo.jpg'
 import PassengerData from "./passenger-Data/PassengerData"
 import BookingStatus from "./bookingStatus/BookingStatus"
 
-const CheckOut = () => {
+const Checkout = () => {
     return (
         <div className="py-20">
             <TopLayout className={"py-20"}
@@ -26,4 +26,4 @@ const CheckOut = () => {
     )
 }
 
-export default CheckOut
+export default Checkout;
