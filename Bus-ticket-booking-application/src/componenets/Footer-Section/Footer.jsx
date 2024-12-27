@@ -51,7 +51,7 @@ const Footer = () => {
 
                         </div>
 
-                        <div className="col-span-1 space-y-5">
+                        {/* <div className="col-span-1 space-y-5">
                             <h3 className="text-lg text-white font-semibold">Quick Links</h3>
                             <ul className="space-y-2">
                                 <li><Link to='/about' className='text-neutral-400 hover:text-white'>About Us</Link></li>
@@ -59,15 +59,15 @@ const Footer = () => {
                                 <li><Link to='/contact' className='text-neutral-400 hover:text-white'>Reserve Your Ticket</Link></li>
                                 <li><Link to='/faq' className='text-neutral-400 hover:text-white'>Create Your Account</Link></li>
                             </ul>
-                        </div>
+                        </div> */}
 
                         <div className="col-span-1 space-y-5">
                             <h3 className="text-lg text-white font-semibold">Top Reserved Routes</h3>
                             <ul className="space-y-2">
-                                <li><Link to='/help' className='text-neutral-400 hover:text-white'>Kathmandu - Pokhara</Link></li>
-                                <li><Link to='/terms' className='text-neutral-400 hover:text-white'>Pokhara - Mustange</Link></li>
-                                <li><Link to='/privacy' className='text-neutral-400 hover:text-white'>Kathmandu - Chitwan</Link></li>
-                                <li><Link to='/refund' className='text-neutral-400 hover:text-white'>Kathmandu - Lumbini</Link></li>
+                                <li><Link className='text-neutral-400 hover:text-white'>Kathmandu - Pokhara</Link></li>
+                                <li><Link className='text-neutral-400 hover:text-white'>Pokhara - Mustange</Link></li>
+                                <li><Link className='text-neutral-400 hover:text-white'>Kathmandu - Chitwan</Link></li>
+                                <li><Link className='text-neutral-400 hover:text-white'>Kathmandu - Lumbini</Link></li>
                             </ul>
                         </div>
 
