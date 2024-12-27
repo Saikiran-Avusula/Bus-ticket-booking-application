@@ -10,19 +10,20 @@ import SearchResults from "./Search-Results-Section/SearchResults";
 const Tickets = () => {
     return (
         <>
-            <div className="w-full space-y-12 py-16">
+            <div className="w-full space-y-12 py-16 bg-white">
                 {/* Top Layout */}
                 <TopLayout className={"py-20"}
                     bgImg={BusSeatsPhoto}
                     title={"Reserve Your Tickets"}
                 />
 
-                <RootLayout className="spacey-12 relative">
+                <RootLayout className="space-y-12 relative">
 
                     {/* Search section */}
                     {/* Fixing this section  on top to be sticky so thatwe can esily chnage the route */}
 
-                    <div className="space-y-5 w-full bgneutral-50 flex py-4 items-center justify-center flex-col sticky top-0 z-30">
+                    <div className="space-y-5 w-full bgneutral-50 flex py-3 
+                    items-center justify-center flex-col sticky top-0 z-30 bg-white rounded-lg">
                         <motion.h1
                             initial={{ opacity: 0, y: -50 }}
                             animate={{ opacity: 1, y: 0 }}

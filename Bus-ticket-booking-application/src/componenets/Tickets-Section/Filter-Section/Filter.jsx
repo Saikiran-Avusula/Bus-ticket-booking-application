@@ -1,4 +1,5 @@
 import { useState } from "react"
+import PropTypes from 'prop-types';
 import PriceRangeSlider from "../Price-Range-Slider/PriceRangeSlider"
 
 
@@ -6,8 +7,7 @@ const Filter = ({ className }) => {
 
 
     const [rangeValues, setRangeValues] = useState({
-        min: 0,
-        max: 100
+        min: 1000 //staring value
     })
 
     const hadleRangeChange = (values) => {
@@ -25,6 +25,7 @@ const Filter = ({ className }) => {
                     min={1000}
                     max={3000}
                     onChange={hadleRangeChange}
+                    value={rangeValues}
                 />
             </div>
 
@@ -222,4 +223,9 @@ const Filter = ({ className }) => {
     )
 }
 
-export default Filter
+Filter.propTypes = {
+    className: PropTypes.string,
+};
+
+
+export default Filter;

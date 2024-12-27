@@ -5,6 +5,7 @@ import { MdOutlineChair } from "react-icons/md"
 import { RiVipFill } from "react-icons/ri"
 import { TbAirConditioning } from "react-icons/tb"
 import { Link } from "react-router-dom"
+import PropTypes from 'prop-types'
 
 const TicketCard = ({ icon: Icon, busName, routeFrom, routeTo, arrivalTime, departureTime, timeDuration, price, availableSeats }) => {
     return (
@@ -68,15 +69,19 @@ const TicketCard = ({ icon: Icon, busName, routeFrom, routeTo, arrivalTime, depa
                                 </p>
                             </div>
 
-                            <h1 className="text-2xl text-neutral-600 font-semibold">
+                            <h3 className="text-2xl text-neutral-600 font-semibold">
                                 {departureTime}
-                            </h1>
+
+                            </h3>
 
                         </div>
 
-                        <div className="w-full flex items-center justify-between">
+                        <div className="w-full flex items-center justify-between py-5">
                             <p className="texxt-base text-neutral-500 font-normal">
                                 {routeFrom}
+                            </p>
+                            <p className="texxt-base text-neutral-500 font-normal font-semibold text-center">
+                                Duration: {timeDuration}
                             </p>
                             <p className="texxt-base text-neutral-500 font-normal">
                                 {routeTo}
@@ -110,6 +115,17 @@ const TicketCard = ({ icon: Icon, busName, routeFrom, routeTo, arrivalTime, depa
             </div>
         </div>
     )
+}
+TicketCard.propTypes = {
+    icon: PropTypes.elementType.isRequired,
+    busName: PropTypes.string.isRequired,
+    routeFrom: PropTypes.string.isRequired,
+    routeTo: PropTypes.string.isRequired,
+    arrivalTime: PropTypes.string.isRequired,
+    departureTime: PropTypes.string.isRequired,
+    timeDuration: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    availableSeats: PropTypes.number.isRequired,
 }
 
 export default TicketCard

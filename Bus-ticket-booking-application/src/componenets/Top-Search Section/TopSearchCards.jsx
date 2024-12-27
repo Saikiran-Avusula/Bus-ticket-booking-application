@@ -2,6 +2,7 @@ import { FaWifi } from "react-icons/fa";
 import { GiCharging, GiWaterBottle } from "react-icons/gi";
 import { IoTv } from "react-icons/io5";
 import PropTypes from 'prop-types';
+import { Link } from "react-router-dom";
 
 
 const TopSearchCards = ({ routeFrom, routeTo, timeDuration, price }) => {
@@ -98,12 +99,11 @@ const TopSearchCards = ({ routeFrom, routeTo, timeDuration, price }) => {
                     <h1 className="text-xl text-neutral-700 font-semibold">
                         Rs. {price}
                     </h1>
-
-                    <button className='w-fit p-2 bg-red-500  flex flex-row bg-red-500 border-2 border-red-500 rounded-xl 
-                                            hover:bg-white hover:text-red-500 text-sm font-normal text-white items-center justify-center 
-                                            gap-x-2 ease-in-out duration-300'>
+                    <Link to="/bus-tickets/detail" className='w-fit p-2 bg-red-500  flex flex-row bg-red-500 border-2 border-red-500 rounded-xl 
+                                                   hover:bg-white hover:text-red-500 text-sm font-normal text-white items-center justify-center 
+                                                   gap-x-2 ease-in-out duration-300'>
                         Reserve Seat
-                    </button>
+                    </Link>
                 </div>
             </div>
         </>

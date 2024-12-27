@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './componenets/Home-Section/Home';
 import Navbar from './componenets/Navbar-section/Navbar';
 
-import Service from './componenets/Service-Section/Service';
+// import Service from './componenets/Service-Section/Service';
 // import About from './componenets/About-section/About';
 import Tickets from './componenets/Tickets-Section/Tickets';
 import Footer from './componenets/Footer-Section/Footer';
@@ -23,7 +23,7 @@ const App = () => {
           <Routes>
             <Route path='/' element={<div> <Home /></div>} />
             {/* <Route path='/about' element={<div> <About /></div>} /> */}
-            <Route path='/service' element={<div> <Service /></div>} />
+            <Route path='/' element={<div> <Home /></div>} />
             <Route path='/bus-tickets' element={<div> <Tickets /></div>} />
             <Route path='/bus-tickets/checkout' element={<div><Checkout /></div>} />
             <Route path='/bus-tickets/payment' element={<div><Invoice /></div>} />

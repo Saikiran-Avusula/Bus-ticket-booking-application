@@ -12,9 +12,9 @@ const Navbar = () => {
 
     const navItems = [
         { label: "Home", link: '/' },
-        // { label: "About", link: "/about" } if needed create about section,
+        // { label: "About", link: "/about" }, //if needed create about section,
         { label: 'Tickets', link: '/bus-tickets' },
-        { label: "Service", link: "/service" }
+        // { label: "Service", link: "/" }
     ];
 
     const handleOpenMenu = () => {
