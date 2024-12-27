@@ -94,7 +94,7 @@ const Navbar = () => {
                         <div className="flex flex-center justify-center m-2">
                             <button
                                 className="md:w-full w-full md:px-4 px-2.5 py-1 bg-red-500 
-                                hover:border-red-500 border md:rounded-full rounded-xl 
+                                hover:border-red-500 hover:border border border-white md:rounded-full rounded-xl 
                                 text-white font-normal text-neutral-50 hover:text-red-500 hover:bg-white 
                                 ease-in-out duration-300">
                                 Sign Up
