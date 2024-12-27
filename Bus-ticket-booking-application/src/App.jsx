@@ -4,7 +4,7 @@ import Home from './componenets/Home-Section/Home';
 import Navbar from './componenets/Navbar-section/Navbar';
 
 import Service from './componenets/Service-Section/Service';
-import About from './componenets/About-section/About';
+// import About from './componenets/About-section/About';
 import Tickets from './componenets/Tickets-Section/Tickets';
 import Footer from './componenets/Footer-Section/Footer';
 import Details from './componenets/Tickets-Section/Details-Section/Details';
